@@ -1,0 +1,8 @@
+node_modules/
+test-results/
+reports/smoke/
+reports/smoke2/
+reports/smoke3/
+reports/final-smoke/
+reports/check/
+*.log

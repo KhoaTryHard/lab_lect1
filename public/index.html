@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latency Hiding Lab</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Distributed Systems · Practical Lab</p>
+        <h1>Đăng ký với độ trễ được che giấu</h1>
+        <p>So sánh kiểm tra lỗi ở server với kiểm tra cục bộ tại client trong cùng một luồng client–server.</p>
+      </section>
+
+      <section class="panel">
+        <div class="mode-row" role="group" aria-label="Chế độ kiểm tra">
+          <label class="mode-card"><input type="radio" name="mode" value="server" checked>
+            <span><strong>A · Server validation</strong><small>Mọi dữ liệu đều đi qua mạng trước khi được kiểm tra.</small></span>
+          </label>
+          <label class="mode-card"><input type="radio" name="mode" value="client">
+            <span><strong>B · Local validation</strong><small>Định dạng được kiểm tra tại trình duyệt trước khi gửi.</small></span>
+          </label>
+        </div>
+
+        <form id="registration-form" novalidate>
+          <div class="field-grid">
+            <label>Họ tên<input data-field="fullName" name="fullName" autocomplete="name"><span class="error" data-error-for="fullName"></span></label>
+            <label>Email<input data-field="email" name="email" type="email" autocomplete="email"><span class="error" data-error-for="email"></span></label>
+            <label>Mật khẩu<input data-field="password" name="password" type="password" autocomplete="new-password"><span class="error" data-error-for="password"></span></label>
+            <label>Xác nhận mật khẩu<input data-field="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password"><span class="error" data-error-for="confirmPassword"></span></label>
+          </div>
+          <button id="submit-button" type="submit">Đăng ký</button>
+          <p class="hint">Tài khoản mẫu đã tồn tại: <code>taken@example.test</code></p>
+        </form>
+        <div id="result" class="result" data-testid="result" aria-live="polite"></div>
+      </section>
+
+      <section class="notes">
+        <div><span class="metric-label">Round-trip mô phỏng</span><strong id="rtt-label">0 ms</strong></div>
+        <div><span class="metric-label">Nguyên tắc</span><strong>Client phản hồi lỗi định dạng ngay</strong></div>
+        <div><span class="metric-label">Giới hạn</span><strong>Server vẫn xác thực và quyết định dữ liệu cuối cùng</strong></div>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

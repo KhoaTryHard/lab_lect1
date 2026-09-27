@@ -1,0 +1,21 @@
+{
+  "name": "latency-hiding-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Client/server latency hiding lab for Distributed Systems.",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "start:proxy": "node src/proxy.mjs",
+    "demo": "node scripts/run-demo.mjs",
+    "test": "node --test test/validation.test.mjs",
+    "test:e2e": "playwright test",
+    "bench": "node scripts/benchmark.mjs"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
