@@ -1,3 +1,4 @@
+/* Kiem thu luong dang ky tren giao dien va hanh vi validation. */
 import { test, expect } from '@playwright/test';
 
 const invalid = { fullName: 'Nguyễn Văn A', email: 'broken', password: 'password1', confirmPassword: 'password1' };

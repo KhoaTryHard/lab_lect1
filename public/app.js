@@ -1,3 +1,4 @@
+/* Dieu khien form dang ky, validation tai client va hien thi ket qua request. */
 import { validateRegistration } from '/shared/validation.mjs';
 
 const form = document.querySelector('#registration-form');

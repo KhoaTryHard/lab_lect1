@@ -1,3 +1,4 @@
+/* Kiem tra va chuan hoa du lieu dang ky dung chung cho client va server. */
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export function validateRegistration(input = {}) {

@@ -1,3 +1,4 @@
+/* Kiem thu ham validation va API dang ky o server. */
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { validateRegistration } from '../shared/validation.mjs';

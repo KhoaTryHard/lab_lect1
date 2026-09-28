@@ -1,3 +1,4 @@
+/* Khoi dong server va proxy de chay thu ung dung voi do tre mang. */
 import { spawn } from 'node:child_process';
 
 const env = { ...process.env, ALLOW_TEST_RESET: '1' };

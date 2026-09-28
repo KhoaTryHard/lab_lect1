@@ -1,3 +1,4 @@
+/* Chuyen tiep request den server va mo phong do tre round-trip. */
 import http from 'node:http';
 
 const listenPort = Number(process.env.PROXY_PORT || 3000);

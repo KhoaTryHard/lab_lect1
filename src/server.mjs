@@ -1,3 +1,4 @@
+/* Xu ly API dang ky, phuc vu tai file frontend va kiem tra du lieu o server. */
 import express from 'express';
 import crypto from 'node:crypto';
 import path from 'node:path';

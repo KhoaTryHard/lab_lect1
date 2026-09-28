@@ -1,3 +1,4 @@
+/* Quan ly kho dang ky trong bo nho va xu ly du lieu mau. */
 export function createRegistrationStore() {
   const registrations = new Map();
   const seed = () => {
